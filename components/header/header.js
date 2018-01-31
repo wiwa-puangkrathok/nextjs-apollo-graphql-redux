@@ -78,7 +78,9 @@ const Header = ({ router: { pathname }}) => (
           linkTo={`/login`} />
         <Item
           name={`Sign Up`}
-          linkTo={`/signup`} />
+          linkTo={`/signup`}
+          fontColor={`#FF4070`}
+          fontWeight={`500`} />
       </FlexEnd>
     </Row>
   </Container>
