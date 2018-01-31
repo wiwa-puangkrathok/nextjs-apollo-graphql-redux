@@ -7,7 +7,7 @@ import * as style from '../../styles/variables'
 import { transistion, clearfix } from '../../styles/style-utils'
 
 const StyledLink = styled.a`
-  color: ${ style.COLOR_MASTER };
+  color: ${ style.COLOR_BODY };
   line-height: 1.5;
   padding: 0.25rem 1rem;
   position: relative;

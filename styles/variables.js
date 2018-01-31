@@ -5,22 +5,36 @@
  */
 export const COLOR_BLACK    = '#000000'
 export const COLOR_WHITE    = '#ffffff'
-export const COLOR_MASTER   = '#333333'
+
+export const COLOR_THEME    = [
+  '#1B1F27', '#2A303D', '#414B5F',
+  '#96A2BA', '#E8E9F3', '#F6F9FF',
+]
 
 export const COLOR_GRAY_00  = '#111111'
 export const COLOR_GRAY_01  = '#666666'
 export const COLOR_GRAY_03  = '#f8f8f8'
 
-export const COLOR_BLUE     = '#0070c9'
+export const COLOR_GREEN    = '#10CFBD'
+export const COLOR_BLUE     = '#2896F5'
+export const COLOR_PURPLE   = '#6D5CAE'
+export const COLOR_ORANGE   = '#F8D053'
+export const COLOR_RED      = '#F55753'
+export const COLOR_PINK     = '#FF4070'
 
-export const COLOR_LINK     = COLOR_BLUE
+export const COLOR_HEADING    = COLOR_THEME[0]
+export const COLOR_SUBHEADING = COLOR_THEME[1]
+export const COLOR_BODY       = COLOR_THEME[2]
+export const COLOR_LINK       = COLOR_BLUE
+
+export const COLOR_BORDER     = COLOR_THEME[4]
 
 /**
  * --------------------------------------------------
  * FONT FAMILY
  * --------------------------------------------------
  */
-export const FONT_FAMILY_BASE = '"Roboto", "Helvetica Neue", "Helvetica", Arial, san-serif'
+export const FONT_FAMILY_BASE = '"Roboto", "Open Sans", "Helvetica Neue", "Helvetica", Arial, san-serif'
 
 /**
  * --------------------------------------------------

@@ -5,7 +5,6 @@ import { hexToRgb } from '../../lib/colors'
 
 import styled from 'styled-components'
 import * as style from '../../styles/variables'
-import { clearfix } from '../../styles/style-utils'
 
 import Item from './item'
 
@@ -21,13 +20,13 @@ const Container = styled.header`
 
 const Brand = styled.span`
   display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
+  padding-top: .085rem;
+  padding-bottom: .085rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  color: ${ style.COLOR_MASTER };
+  color: ${ style.COLOR_BODY };
 `
 
 const Row = styled.div`
@@ -55,24 +54,31 @@ const FlexEnd = styled(Flex)`
 const Header = ({ router: { pathname }}) => (
   <Container>
     <Link prefetch href='/'>
-      <a><Brand>Logo</Brand></a>
+      <a>
+        <Brand>
+          <img src={`/images/logo.png`} />
+        </Brand>
+      </a>
     </Link>
     <Row>
       <FlexStart>
         <Item
           name={`Documentation`}
-          linkTo={`/docs`}
-        />
+          linkTo={`/docs`} />
         <Item
           name={`Community`}
-          linkTo={`/community`}
-        />
+          linkTo={`/community`} />
+        <Item
+          name={`Help`}
+          linkTo={`/help`} />
       </FlexStart>
       <FlexEnd>
         <Item
-          name={`Community`}
-          linkTo={`/community`}
-        />
+          name={`Log In`}
+          linkTo={`/login`} />
+        <Item
+          name={`Sign Up`}
+          linkTo={`/signup`} />
       </FlexEnd>
     </Row>
   </Container>
