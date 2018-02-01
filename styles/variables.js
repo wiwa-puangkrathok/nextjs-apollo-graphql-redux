@@ -109,11 +109,11 @@ export const WIDTH_BASE = '980px'
  * MEDIA QUERIES
  * --------------------------------------------------
  */
-export const MEDIA = {
-  SM: '576px',
-  MD: '768px',
-  LG: '992px',
-  XLG: '1200px',
+export const BREAKPOINT = {
+  SM: '576',
+  MD: '768',
+  LG: '992',
+  XLG: '1200',
 }
 
 /**
