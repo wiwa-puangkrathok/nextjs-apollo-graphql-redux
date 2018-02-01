@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { withRouter } from 'next/router'
+import InlineSVG from 'svg-inline-react'
 
 import { hexToRgb } from '../../lib/colors'
 
@@ -7,6 +8,7 @@ import styled from 'styled-components'
 import * as style from '../../styles/variables'
 
 import Item from './item'
+import Logo from '../logo' 
 
 const Container = styled.header`
   display: flex;
@@ -20,8 +22,6 @@ const Container = styled.header`
 
 const Brand = styled.span`
   display: inline-block;
-  padding-top: .085rem;
-  padding-bottom: .085rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -54,11 +54,7 @@ const FlexEnd = styled(Flex)`
 const Header = ({ router: { pathname }}) => (
   <Container>
     <Link prefetch href='/'>
-      <a>
-        <Brand>
-          <img src={`/images/logo.png`} />
-        </Brand>
-      </a>
+      <a><Logo /></a>
     </Link>
     <Row>
       <FlexStart>

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styled from 'styled-components'
 
 import withData from '../lib/withData'
@@ -8,10 +9,11 @@ import { clearfix } from '../styles/style-utils'
 
 import App from '../components/app'
 import Header from '../components/header'
+import Text from '../components/text'
 
 const HeroWrapper = styled.div`
   width: 100%;
-  padding: 30px;
+  padding: 30px 15px;
   position: relative;
   ${ clearfix }
 `
@@ -23,9 +25,14 @@ const Title = styled.span`
 
 export default withData(() => (
   <App>
+    <Head>
+      <title>Hi-Five | Creating the frontend for the world</title>
+    </Head>
+
     <Header />
     <HeroWrapper>
       <Title>Build your pages with Hi-Five. It’s easy!</Title>
+      <Text>Capcito is on a mission to disrupt the financial services market in its native Sweden. And we’ve been able to help by creating a SaaS platform with which the company can receive, assess, and fulfill loan applications in real time.</Text>
     </HeroWrapper>
   </App>
 ))

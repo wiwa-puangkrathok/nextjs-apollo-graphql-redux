@@ -28,7 +28,8 @@
     "redux": "^3.7.2",
     "socket.io": "^2.0.4",
     "styled-components": "^2.4.0",
-    "styled-normalize": "^2.3.0"
+    "styled-normalize": "^2.3.0",
+    "svg-inline-react": "^3.0.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.4.0",
