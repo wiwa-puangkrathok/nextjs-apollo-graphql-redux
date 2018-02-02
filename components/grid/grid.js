@@ -10,14 +10,7 @@ export default class Grid extends Component {
   }
   render () {
 
-    const InitializedGrid = styled.div`
-      box-sizing: border-box;
-      flex: 0 0 auto;
-      padding-right: ${ props => props.padding || '.5rem' };
-      padding-left: ${ props => props.padding || '.5rem' };
-    `
-
-    const Container = styled(InitializedGrid)`
+    const Container = styled.div`
       ${ props => makeGrid(props.col) };
     `
 
